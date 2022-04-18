@@ -2,7 +2,7 @@ import './Signup.css'
 import { useEffect, useState } from 'react'
 import { Navigate } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-
+import {Link} from "react-router-dom"
 
 export const Signup=()=>{
 const [signupdata,setSignupdata]=useState({}) 
@@ -31,7 +31,9 @@ const [data,setData]=useState({})
   },[data])
 
    return(
+        
        <div className='signup'>
+        
            <div  className="form_container">
              <form id="signup_form" onSubmit={senddata}>
                <label id='lab'>First Your First Name</label><br/>

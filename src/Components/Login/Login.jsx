@@ -23,7 +23,7 @@ const handlechange=(e)=>{
       method:"POST",
       body:JSON.stringify(logindata),
       headers:{"content-type":"application/json"}
-      }).then(Response=>Response.json()).then((data)=>{dispatch(loginsuccess(data));if(data.token)navigate("/teachers"); else{alert("enter correct details")} }).catch((e)=>{dispatch(loginfailure)})
+      }).then(Response=>Response.json()).then((data)=>{dispatch(loginsuccess(data));if(data.token)navigate("/products"); else{alert("enter correct details")} }).catch((e)=>{dispatch(loginfailure)})
   }
  
    return(
